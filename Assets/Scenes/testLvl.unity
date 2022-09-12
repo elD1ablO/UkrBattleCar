@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17122526, g: 0.0695448, b: 0.15268382, a: 1}
+  m_IndirectSpecularColor: {r: 0.17068061, g: 0.06923961, b: 0.15184829, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8943,7 +8943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -9775,11 +9774,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: lvl
-      objectReference: {fileID: 0}
-    - target: {fileID: 376567066091065636, guid: 37836b9db934f8d47895c8e5ab6b4da0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4139195561644873036, guid: 37836b9db934f8d47895c8e5ab6b4da0,
         type: 3}
@@ -19829,11 +19823,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2042733062417270268, guid: 993d2f3ed51454869af0023769df26ed,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2042733062417270268, guid: 993d2f3ed51454869af0023769df26ed,
-        type: 3}
       propertyPath: m_Intensity
       value: 1
       objectReference: {fileID: 0}
@@ -19906,11 +19895,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DirectionalLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032402979040246081, guid: 993d2f3ed51454869af0023769df26ed,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1370003261880785647, guid: 993d2f3ed51454869af0023769df26ed, type: 3}
