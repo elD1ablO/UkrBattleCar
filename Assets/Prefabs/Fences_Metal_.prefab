@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1526881439007355512}
   - component: {fileID: 6499342968438605238}
   - component: {fileID: 5044083571291264885}
+  - component: {fileID: -8592955050212550722}
   m_Layer: 0
   m_Name: Fences_Metal_
   m_TagString: Untagged
@@ -133,3 +134,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8592955050212550722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8454749657260617707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c73a774dd666246ad4dd434ab7e60e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
