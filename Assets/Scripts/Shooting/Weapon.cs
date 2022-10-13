@@ -8,22 +8,23 @@ using System;
 public class Weapon : MonoBehaviour
 
 { 
-    /*
+    
     [SerializeField] Camera fpCamera;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 10f;
 
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
-    //[SerializeField] Ammo ammoSlot;
-    //[SerializeField] AmmoType ammoType;
+
+    [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
 
     //[SerializeField] InputAction fireAction;
-    [SerializeField] TextMeshProUGUI ammoText;
+    //[SerializeField] TextMeshProUGUI ammoText;
 
-    [SerializeField] AudioSource shootAudio;
+    //[SerializeField] AudioSource shootAudio;
 
-    [SerializeField] float timeBetweenShots = 1f;
+    [SerializeField] float timeBetweenShots = 0.3f;
     bool canShoot = true;
     
 
@@ -45,14 +46,18 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        DisplayAmmo();
+        if (Input.GetMouseButtonDown(0))
+        {
+            StartCoroutine(Shoot());
+        }
+        //DisplayAmmo();
     }
 
-    private void DisplayAmmo()
+    /*private void DisplayAmmo()
     {
         int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
         ammoText.text = currentAmmo.ToString();
-    }
+    }*/
 
     IEnumerator Shoot()
     {        
@@ -61,7 +66,7 @@ public class Weapon : MonoBehaviour
             canShoot = false;
             if (ammoSlot.GetCurrentAmmo(ammoType) > 0)
             {
-                shootAudio.Play();
+                //shootAudio.Play();
                 PlayMuzzleFlash();
                 ProcessRaycast();
                 ammoSlot.ReduceCurrentAmmo(ammoType);
@@ -90,7 +95,7 @@ public class Weapon : MonoBehaviour
 
     void PlayMuzzleFlash()
     {
-        muzzleFlash.Play();
+        //muzzleFlash.Play();
     }
 
     void CreateHitImpact(RaycastHit hit)
@@ -98,5 +103,5 @@ public class Weapon : MonoBehaviour
         GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(impact, 1f);
     }
-*/
+
 }
