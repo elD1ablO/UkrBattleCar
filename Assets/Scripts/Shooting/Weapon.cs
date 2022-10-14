@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
 
 { 
     
-    [SerializeField] Camera fpCamera;
+    [SerializeField] Transform shootingPoint;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 10f;
 
@@ -79,7 +79,7 @@ public class Weapon : MonoBehaviour
     void ProcessRaycast()
     {
         RaycastHit hit;
-        if (Physics.Raycast(fpCamera.transform.position, fpCamera.transform.forward, out hit, range))
+        if (Physics.Raycast(shootingPoint.transform.position, shootingPoint.transform.forward, out hit, range))
         {
             CreateHitImpact(hit);            
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
