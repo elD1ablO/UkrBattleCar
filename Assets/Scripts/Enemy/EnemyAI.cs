@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {    
-    /*
+    
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 4f;
 
@@ -71,13 +71,14 @@ public class EnemyAI : MonoBehaviour
 
     void ChaseTarget()
     {
-        GetComponent<Animator>().SetBool("attack", false);
-        GetComponent<Animator>().SetTrigger("move");
+        //GetComponent<Animator>().SetBool("attack", false);
+        //GetComponent<Animator>().SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
     }
     void AttackTarget()
     {
-        GetComponent<Animator>().SetBool("attack", true);
+        //GetComponent<Animator>().SetBool("attack", true);
+        Debug.Log("Enemy attacks");
     }
 
     void FaceTarget()
@@ -86,5 +87,5 @@ public class EnemyAI : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
-    */
+    
 }

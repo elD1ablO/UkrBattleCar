@@ -32,9 +32,7 @@ public class AimToMousePoint : MonoBehaviour
 
             //rotate us over time according to speed until we are in the required rotation
             
-            transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * RotationSpeed);
-            
-        }
-        
+            transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * RotationSpeed);            
+        }        
     }
 }
