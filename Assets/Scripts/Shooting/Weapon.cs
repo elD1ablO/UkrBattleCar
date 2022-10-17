@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] AmmoType ammoType;
 
     //[SerializeField] InputAction fireAction;
-    //[SerializeField] TextMeshProUGUI ammoText;
+    [SerializeField] TextMeshProUGUI ammoText;
 
     //[SerializeField] AudioSource shootAudio;
 
@@ -50,14 +50,14 @@ public class Weapon : MonoBehaviour
         {
             StartCoroutine(Shoot());
         }
-        //DisplayAmmo();
+        DisplayAmmo();
     }
 
-    /*private void DisplayAmmo()
+    private void DisplayAmmo()
     {
         int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
         ammoText.text = currentAmmo.ToString();
-    }*/
+    }
 
     IEnumerator Shoot()
     {        
@@ -95,7 +95,7 @@ public class Weapon : MonoBehaviour
 
     void PlayMuzzleFlash()
     {
-        //muzzleFlash.Play();
+        muzzleFlash.Play();
     }
 
     void CreateHitImpact(RaycastHit hit)
