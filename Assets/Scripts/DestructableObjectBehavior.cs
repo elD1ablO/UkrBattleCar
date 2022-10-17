@@ -17,6 +17,7 @@ public class DestructableObjectBehavior : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+
             Destroy(gameObject, timeBeforeDestruction);
         }
         
