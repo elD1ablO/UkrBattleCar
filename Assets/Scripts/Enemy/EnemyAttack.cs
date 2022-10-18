@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    /*
+    
     PlayerHealth target;
     [SerializeField] float damage = 30f;
-    [SerializeField] AudioSource attackSound;
+    //[SerializeField] AudioSource attackSound;
 
     void Start()
     {
         target = FindObjectOfType<PlayerHealth>();
-        attackSound = GetComponent<AudioSource>();
+        //attackSound = GetComponent<AudioSource>();
     }
 
     public void AttackHitEvent()
     {
         if (target == null) return;
         target.GetComponent<PlayerHealth>().TakeDamage(damage);
-        target.GetComponent<DisplayDamage>().ShowDamageCanvas();
-        attackSound.Play();
+        //target.GetComponent<DisplayDamage>().ShowDamageCanvas();
+        //attackSound.Play();
     }
-    */
+    
 }
