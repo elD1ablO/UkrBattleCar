@@ -16,6 +16,6 @@ public class PlayerManager : MonoBehaviour
     void ShakePlayer()
     {
         Rigidbody rb = playerPrefab.GetComponent<Rigidbody>();
-        rb.AddForce(Random.Range(3,7), Random.Range(3, 7), Random.Range(3, 7), ForceMode.Impulse);
+        rb.AddForce(0, 6500, 7000, ForceMode.Impulse);
     }
 }
