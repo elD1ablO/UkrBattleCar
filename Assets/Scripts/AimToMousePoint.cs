@@ -7,7 +7,7 @@ using UnityEngine.Rendering;
 public class AimToMousePoint : MonoBehaviour
 {
     //values that will be set in the Inspector
-   
+    public static AimToMousePoint instance;
     public float RotationSpeed = 2;
 
     //values for internal use
@@ -15,6 +15,10 @@ public class AimToMousePoint : MonoBehaviour
     Quaternion _lookRotation;
     Vector3 _direction;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,9 +34,15 @@ public class AimToMousePoint : MonoBehaviour
             //create the rotation we need to be in to look at the target
             _lookRotation = Quaternion.LookRotation(_direction);
 
-            //rotate us over time according to speed until we are in the required rotation
-            
+            //rotate us over time according to speed until we are in the required rotation            
             transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * RotationSpeed);            
         }        
     }
+    /*public Vector3 GetPosition()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(ray, out RaycastHit raycastHit, float.MaxValue);
+        return raycastHit.point;
+    }
+    */
 }

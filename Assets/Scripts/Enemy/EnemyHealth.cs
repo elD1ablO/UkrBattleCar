@@ -27,6 +27,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
-        GetComponent<Animator>().SetTrigger("die");
+        Destroy(gameObject);
+        //GetComponent<Animator>().SetTrigger("die");
     }
 }
