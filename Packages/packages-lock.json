@@ -86,7 +86,7 @@
         "com.unity.editorcoroutines": "1.0.0",
         "com.unity.performance.profile-analyzer": "1.1.1",
         "com.unity.test-framework": "1.1.33",
-        "com.unity.testtools.codecoverage": "1.1.1"
+        "com.unity.testtools.codecoverage": "1.2.0"
       }
     },
     "com.unity.ide.rider": {
@@ -115,7 +115,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.learn.iet-framework": {
-      "version": "2.2.2",
+      "version": "3.1.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -233,7 +233,7 @@
       }
     },
     "com.unity.terrain-tools": {
-      "version": "5.0.0-pre.3",
+      "version": "5.0.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -254,7 +254,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.testtools.codecoverage": {
-      "version": "1.1.1",
+      "version": "1.2.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {

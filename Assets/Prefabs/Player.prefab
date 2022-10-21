@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 170639965928933411}
-  range: 100
+  range: 1000
   damage: 10
   muzzleFlash: {fileID: 8678807846920743762}
   hitEffect: {fileID: 100002, guid: 0c5bf22aab064f242bba4a1ce3cba591, type: 3}
@@ -445,6 +445,41 @@ PrefabInstance:
       propertyPath: m_UseColorTemperature
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8853692200466262506, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853692200466262507, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
+        type: 3}
+      propertyPath: m_BoxSize.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853692200466262507, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
+        type: 3}
+      propertyPath: m_BoxSize.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853692200466262507, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
+        type: 3}
+      propertyPath: m_BoxSize.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853692200466262507, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.4565177
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853692200466262507, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.6981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853692200466262507, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.4175507
+      objectReference: {fileID: 0}
     - target: {fileID: 8853692200729060728, guid: b0b7c6bb614944b4e9dd3ad2ff385aa3,
         type: 3}
       propertyPath: m_BounceIntensity
@@ -523,22 +558,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57f108cf78e0763409ae3827f403af12,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57f108cf78e0763409ae3827f403af12,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.84
+      value: -51.83011
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57f108cf78e0763409ae3827f403af12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.93
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57f108cf78e0763409ae3827f403af12,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 88.2
+      value: 87.50812
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57f108cf78e0763409ae3827f403af12,
         type: 3}
@@ -634,6 +669,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1769194030}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57f108cf78e0763409ae3827f403af12,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2104015754}
     - targetCorrespondingSourceObject: {fileID: 8773256788009609842, guid: 57f108cf78e0763409ae3827f403af12,
         type: 3}
       insertIndex: -1
@@ -704,10 +743,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 127
   maxReverseSpeed: 45
-  accelerationMultiplier: 9
+  accelerationMultiplier: 10
   maxSteeringAngle: 27
   steeringSpeed: 0.574
-  brakeForce: 390
+  brakeForce: 400
   decelerationMultiplier: 3
   handbrakeDriftMultiplier: 5
   bodyMassCenter: {x: 0, y: 0, z: 0}
@@ -738,6 +777,19 @@ MonoBehaviour:
   carSpeed: 0
   isDrifting: 0
   isTractionLocked: 0
+--- !u!114 &2104015754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708437324795352999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaba5fe66d98fa942b4765dd603dff20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 100
 --- !u!4 &4052347642113051933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57f108cf78e0763409ae3827f403af12,
