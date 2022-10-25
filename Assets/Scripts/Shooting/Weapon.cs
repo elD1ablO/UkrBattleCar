@@ -67,7 +67,7 @@ public class Weapon : MonoBehaviour
             if (ammoSlot.GetCurrentAmmo(ammoType) > 0)
             {
                 //shootAudio.Play();
-                PlayMuzzleFlash();
+                StartCoroutine(PlayMuzzleFlash());
                 ProcessRaycast();
                 ammoSlot.ReduceCurrentAmmo(ammoType);
             }
@@ -93,9 +93,12 @@ public class Weapon : MonoBehaviour
         }        
     }
 
-    void PlayMuzzleFlash()
+    IEnumerator PlayMuzzleFlash()
     {
+        muzzleFlash.gameObject.SetActive(true);
         muzzleFlash.Play();
+        yield return new WaitForSeconds(0.2f);
+        muzzleFlash.gameObject.SetActive(false);
     }
 
     void CreateHitImpact(RaycastHit hit)
