@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
 
     //[SerializeField] AudioSource shootAudio;
 
-    [SerializeField] float timeBetweenShots = 0.3f;
+    [SerializeField] float timeBetweenShots = 0.5f;
     bool canShoot = true;
     
 
@@ -46,7 +46,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             StartCoroutine(Shoot());
         }
@@ -67,7 +67,7 @@ public class Weapon : MonoBehaviour
             if (ammoSlot.GetCurrentAmmo(ammoType) > 0)
             {
                 //shootAudio.Play();
-                PlayMuzzleFlash();
+                StartCoroutine(PlayMuzzleFlash());
                 ProcessRaycast();
                 ammoSlot.ReduceCurrentAmmo(ammoType);
             }
@@ -93,9 +93,12 @@ public class Weapon : MonoBehaviour
         }        
     }
 
-    void PlayMuzzleFlash()
+    IEnumerator PlayMuzzleFlash()
     {
+        muzzleFlash.gameObject.SetActive(true);
         muzzleFlash.Play();
+        yield return new WaitForSeconds(0.2f);
+        muzzleFlash.gameObject.SetActive(false);
     }
 
     void CreateHitImpact(RaycastHit hit)
