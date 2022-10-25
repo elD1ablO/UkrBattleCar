@@ -19,7 +19,7 @@ TagManager:
   - PostProcessing
   - Ground
   - Environment
-  - Track
+  - obstacles
   - CrashObject
   - Kart
   - TrainingCheckpoints
