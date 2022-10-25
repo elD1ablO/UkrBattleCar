@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
 
     //[SerializeField] AudioSource shootAudio;
 
-    [SerializeField] float timeBetweenShots = 0.3f;
+    [SerializeField] float timeBetweenShots = 0.5f;
     bool canShoot = true;
     
 
@@ -46,7 +46,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             StartCoroutine(Shoot());
         }
