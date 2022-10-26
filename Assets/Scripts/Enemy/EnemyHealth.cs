@@ -31,4 +31,15 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);        
         //GetComponent<Animator>().SetTrigger("die");
     }
+
+    /*
+    private void OnMouseEnter()
+    {
+        CursorChange.instance.SetCursorColor(Color.red);
+    }
+    private void OnMouseExit()
+    {
+        CursorChange.instance.SetCursorColor(Color.white);
+    }
+    */
 }
