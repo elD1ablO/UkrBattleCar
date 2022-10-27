@@ -20,10 +20,5 @@ public class CursorChange : MonoBehaviour
         Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.ForceSoftware);
 
     }
-
-    public void SetCursorColor(Color color)
-    {
-        cursorTexture.GetComponent<SpriteRenderer>().color = color;
-    }
-   
+       
 }
