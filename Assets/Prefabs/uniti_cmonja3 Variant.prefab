@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
-  deathParticles: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a,
+  deathParticles: {fileID: 5104538143102197435, guid: d32aa916f50cac94db11e6f19821a58f,
     type: 3}
 --- !u!54 &1990460165
 Rigidbody:
