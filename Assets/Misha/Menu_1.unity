@@ -188,25 +188,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2387030905148908660, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2387030906419499173, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2387030906419499176, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.66417617
+      value: 0.62574965
       objectReference: {fileID: 0}
     - target: {fileID: 2387030906419499176, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7475762
+      value: 0.78002393
       objectReference: {fileID: 0}
     - target: {fileID: 2387030906419499176, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 96.76199
+      value: 102.526
       objectReference: {fileID: 0}
     - target: {fileID: 5382922067146038209, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
         type: 3}
       propertyPath: m_Name
       value: TableLamp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382922067146038209, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -301,6 +316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TableLamp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382922067146038209, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -449,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &671249297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,6 +653,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TableLamp (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5382922067146038209, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -716,6 +741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpotAngle
       value: 112.99841
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849864893153439636, guid: 3dbfd780e3937c540985e39d48dff71f,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4849864893153439638, guid: 3dbfd780e3937c540985e39d48dff71f,
         type: 3}
@@ -1197,10 +1227,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2387030905148908660, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2387030906419499173, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5382922067146038209, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
         type: 3}
       propertyPath: m_Name
       value: TableLamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382922067146038209, guid: 3c8a7bcf2d8f10a439a7e99f88301180,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1280,6 +1325,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp_big
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849864893153439636, guid: 3dbfd780e3937c540985e39d48dff71f,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
