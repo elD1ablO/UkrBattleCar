@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hp = 100f;
     [SerializeField] ParticleSystem deathParticles;
+
+    public static event EventHandler OnEnemyKilled;
 
     bool isDead = false;
 
@@ -32,6 +35,8 @@ public class EnemyHealth : MonoBehaviour
         ParticleSystem blood = Instantiate(deathParticles,transform.position, Quaternion.identity);
         blood.transform.parent = null;
         blood.Play();
+
+        OnEnemyKilled?.Invoke(this, EventArgs.Empty);
 
         Destroy(gameObject);
         //GetComponent<Animator>().SetTrigger("die");

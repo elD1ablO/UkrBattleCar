@@ -7,7 +7,7 @@ TagManager:
   - Checkpoint
   - CrashMode
   - FxTemporaire
-  - a
+  - Enemy
   layers:
   - Default
   - TransparentFX

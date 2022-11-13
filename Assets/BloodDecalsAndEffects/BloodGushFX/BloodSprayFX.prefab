@@ -870,7 +870,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 200
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5127,7 +5127,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.08
+      scalar: 0.15
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9714,7 +9714,7 @@ Transform:
   - {fileID: 4000010136001096}
   - {fileID: 4000013664598720}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &5104538143102197435
 ParticleSystem:
@@ -14803,7 +14803,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.05
+      scalar: 0.08
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -15386,7 +15386,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1000
+      scalar: 2000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
