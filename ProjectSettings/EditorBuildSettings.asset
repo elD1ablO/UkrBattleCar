@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Misha/Level_1 1.unity
+    path: Assets/Scenes/Level_1 1.unity
     guid: b329b3a8a9347644aa0b0f8e3cc4194d
   m_configObjects: {}
