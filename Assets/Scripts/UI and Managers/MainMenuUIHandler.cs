@@ -13,7 +13,7 @@ public class MainMenuUIHandler : MonoBehaviour
 {
     public void StartNew()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void Exit()
