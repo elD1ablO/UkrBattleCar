@@ -1,21 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] float playerHealth = 100f;
+    public static event EventHandler OnDamageTaken;
 
-    public void TakeDamage(float damage)
+    int playerHealth = 100;       
+
+    public void TakeDamage(int damage)
     {
         playerHealth -= damage;
+        OnDamageTaken?.Invoke(this, EventArgs.Empty);
+
         if (playerHealth <= 0)
         {
-            Debug.Log("DEAD");
-            
+            //Debug.Log("DEAD");            
             GameManager.instance.HandleDeath();
         }
     }
 
+    public int GetPlayerHealth()
+    {
+        return playerHealth;
+    }
     
 }

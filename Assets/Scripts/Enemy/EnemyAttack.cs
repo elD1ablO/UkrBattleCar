@@ -6,7 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
     
     PlayerHealth target;
-    [SerializeField] float damage = 10f;
+    [SerializeField] int damage = 5;
     //[SerializeField] AudioSource attackSound;
 
     void Start()

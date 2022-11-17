@@ -12,7 +12,7 @@ public class SceneLoader : MonoBehaviour
     public void Reload()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(0);        
+        SceneManager.LoadScene(2);        
     }
 
     public void Quit()
