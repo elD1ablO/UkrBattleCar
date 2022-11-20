@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] GameObject gameOverCanvas;
 
+    [SerializeField] GameObject gameOverCanvas;
+    [SerializeField] GameObject inGameCanvas;
     void Awake()
     {
         if (instance != null)
@@ -16,11 +17,14 @@ public class GameManager : MonoBehaviour
             instance = this;
 
         gameOverCanvas.gameObject.SetActive(false);
+        inGameCanvas.gameObject.SetActive(true);
     }
 
     public void HandleDeath()
     {
         gameOverCanvas.gameObject.SetActive(true);
+        inGameCanvas.gameObject.SetActive(false);
+
         Time.timeScale = 0f;        
     }
 }

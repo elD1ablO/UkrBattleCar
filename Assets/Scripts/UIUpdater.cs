@@ -4,29 +4,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using RengeGames.HealthBars;
 
 public class UIUpdater : MonoBehaviour
 {
+    [SerializeField] Sprite fullHP;
+    [SerializeField] Sprite midHP;
+    [SerializeField] Sprite lowHP;
+    
+    [SerializeField] Image HPIndication;
+
     [SerializeField] TextMeshProUGUI enemiesKilledText;
 
-    [SerializeField] RadialSegmentedHealthBar healthBar;
+    
 
     PlayerHealth playerHP;
 
     int enemiesKilled = 0;
     int currentHP;
-    
 
-        
+
     void Awake()
     {
         EnemyHealth.OnEnemyKilled += EnemyHealth_OnEnemyKilled;
         PlayerHealth.OnDamageTaken += PlayerHealth_OnDamageTaken;
-        //playerHP = FindObjectOfType<PlayerHealth>();
+        playerHP = FindObjectOfType<PlayerHealth>();
     }
 
-    
 
     void Start()
     {
@@ -37,12 +40,16 @@ public class UIUpdater : MonoBehaviour
     {
         enemiesKilledText.text = enemiesKilled.ToString();
 
-        healthBar.AddRemoveSegments(-1);
+        if (currentHP > 60) HPIndication.sprite = fullHP;
+        if (currentHP <= 60 && currentHP > 30) HPIndication.sprite = midHP;
+        if (currentHP <= 30) HPIndication.sprite = lowHP;
     }
     void PlayerHealth_OnDamageTaken(object sender, EventArgs e)
-    {
-
+    {        
         currentHP = playerHP.GetPlayerHealth();
+           
+
+        Debug.Log(currentHP);
     }
 
     void EnemyHealth_OnEnemyKilled(object sender, EventArgs e)
