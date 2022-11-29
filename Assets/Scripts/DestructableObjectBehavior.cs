@@ -6,17 +6,17 @@ using UnityEngine;
 public class DestructableObjectBehavior : MonoBehaviour
 {
     [SerializeField] float timeBeforeDestruction = 5f;
-    BoxCollider boxCollider;
-    MeshRenderer meshRenderer;
-    void Awake()
-    {
-        boxCollider = GetComponent<BoxCollider>();
-        meshRenderer = GetComponent<MeshRenderer>();
-    }
+    [SerializeField] GameObject destroyParticles;
+        
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            if (destroyParticles != null)
+            {
+                GameObject particles = Instantiate(destroyParticles, transform.position, Quaternion.identity);
+                particles.transform.parent = null;
+            }
 
             Destroy(gameObject, timeBeforeDestruction);
         }

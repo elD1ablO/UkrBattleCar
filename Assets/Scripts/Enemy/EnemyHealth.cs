@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] float hp = 100f;
+    [SerializeField] float hp = 10f;
     [SerializeField] ParticleSystem deathParticles;
 
     public static event EventHandler OnEnemyKilled;
